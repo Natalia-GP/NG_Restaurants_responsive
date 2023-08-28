@@ -1,0 +1,31 @@
+<h2 class="title">Reservas</h2>
+<form class="form" method="post" action="/send">
+  <label for="book">Reserva tu noche</label>
+  <input class="form__input" type="datetime-local" id="" name="" required />
+  <label for="">restaurante</label>
+  <select class="form__restaurants" name="restaurants" id="">
+    <option value="">Arrogante</option>
+    <option value="">Corral de la Morería</option>
+    <option value="">Fanático</option>
+    <option value="">Jungle Jazz Club</option>
+    <option value="">Olé Olá</option>
+  </select>
+  <label for="numberPeople">Número de personas</label>
+  <select name="number" id="number" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+  </select>
+  <label for="name">Nombre</label>
+  <input class="form__input" type="text" required />
+  <label for="email">Email</label>
+  <input class="form__input" type="email" name="email" id="email" required />
+  <label for="tel">Telefono</label>
+  <input class="form__input" type="tel" name="tel" id="tel" required />
+  <button type="submit">¡Listo!</button>
+</form>

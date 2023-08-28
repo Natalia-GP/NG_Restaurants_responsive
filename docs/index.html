@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adalab Web Starter Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <section class="hero" id="hero">
+        <nav class="hero__nav">
+          <h2 class="hero__nav--text">¿Dónde cenamos?</h2>
+          <a
+            class="hero__buttonMenu"
+            href="https://github.com/Natalia-GP"
+            title="To Github"
+            target="_blank"
+            >&equiv;</a
+          >
+        </nav>
+        <img
+          class="hero__title"
+          src="./assets/images/title.png"
+          alt="Restaurants Show"
+        />
+      </section>
+      <nav class="buttonsHero">
+        <button class="btn">
+          <a
+            class="link__rest"
+            href="https://natalia-gp.github.io/Portfolio/"
+            title="To Portfolio"
+            target="black"
+            >RESTAURANTES</a
+          >
+        </button>
+        <button class="btn">
+          <a
+            class="link__rest"
+            href="https://www.linkedin.com/in/natalia-gomez-perez/"
+            title="To LinkedIn"
+            target="blank"
+            >RESERVAS</a
+          >
+        </button>
+      </nav>
+
+      <section class="desc">
+        <p class="desc__text">Convierte tu cena en una experiencia inolvidable</p>
+        <img
+          src="https://offloadmedia.feverup.com/secretmiami.com/wp-content/uploads/2021/08/13053820/ChicaNights5-scaled-e1681921130648.jpg"
+          class="desc__img"
+          alt="Img1"
+        />
+        <p class="desc__text2">
+          Sin complicaciones: Elige entre nuestros restaurantes, rellena nuestro
+          formulario de reserva ¡y listo!
+        </p>
+        <img
+          src="https://s3.abcstatics.com/abc/sevilla/multimedia/tecnologia/2023/04/14/movil-android-R5GSjeO3FGzFOo3WwswCaLK-366x256@abc.jpeg"
+          class="desc__img2"
+          alt="Img2"
+        />
+      </section>
+
+      <main class="restaurants">
+        <h2 class="restaurants__text">restaurantes</h2>
+        <section class="restaurant__section">
+          <div class="rest1">
+            <h3 class="title_restaurant">Corral de la Morería</h3>
+            <p>
+              Corral de la Morería es el Tablao Flamenco más afamado y prestigioso del
+              mundo. Un templo del arte. Desde su inauguración en 1956, ofrece cada
+              noche una experiencia única en el mundo gracias a su apuesta por la
+              máxima calidad tanto en la programación artística como en la oferta
+              gastronómica y la atención al cliente.
+            </p>
+          </div>
+          <img class="img2" src="./assets/images/corral.jpg" alt="img2" />
+          <div class="rest2">
+            <h3 class="title_restaurant">Arrogante</h3>
+            <p>
+              En Arrogante te sentirás como en el centro de la pista de un animado y
+              divertido circo vintage donde disfrutar de una cocina clásica italiana
+              con toques de autor, muchos cócteles, buena música con éxitos italianos
+              de los 80 y 90 y divertidos espectáculos.
+            </p>
+          </div>
+          <img class="img3" src="./assets/images/arrogante.jpg" alt="img3" />
+          <div class="rest3">
+            <h3 class="title_restaurant">Fanático</h3>
+            <p>
+              Actuaciones en directo, una decoración que es pura magia, cocina
+              mediterránea reinventada y un ambiente top. Por todo esto (y mucho más)
+              Fanático ya es uno de los restaurantes preferidos de la 'jet set'
+              madrileña.
+            </p>
+          </div>
+          <img class="img4" src="./assets/images/fanatico.jpeg" alt="img4" />
+          <div class="rest4">
+            <h3 class="title_restaurant">Nómada</h3>
+            <p>
+              Una jaima en el corazón de Madrid. Un paraíso terrenal para cenar, beber
+              y sanar. Un alto en el camino. Un espejismo. El retorno a nuestro ser
+              original. Música, poesía y hospitalidad son sus señas de identidad.
+              Nómadas
+            </p>
+          </div>
+          <img class="img5" src="./assets/images/nomada.jpg" alt="img5" />
+          <div class="rest5">
+            <h3 class="title_restaurant">Olé Olá</h3>
+            <p>
+              Te presentamos Olé Olá. Alma Flamenca Experience, un show-dinner en el
+              que se encuentran la mejor gastronomía con la pasión, el arte, y los
+              taconeos de nuestro mejor flamenco en un mismo espacio, el emblemático
+              Teatro Eslava.
+            </p>
+          </div>
+          <img src="./assets/images/oleola.jpg" class="img7" alt="img7" />
+        </section>
+      </main>
+
+      <h2 class="title">Reservas</h2>
+      <form class="form" method="post" action="/send">
+        <label for="book">Reserva tu noche</label>
+        <input class="form__input" type="datetime-local" id="" name="" required />
+        <label for="">restaurante</label>
+        <select class="form__restaurants" name="restaurants" id="">
+          <option value="">Arrogante</option>
+          <option value="">Corral de la Morería</option>
+          <option value="">Fanático</option>
+          <option value="">Jungle Jazz Club</option>
+          <option value="">Olé Olá</option>
+        </select>
+        <label for="numberPeople">Número de personas</label>
+        <select name="number" id="number" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <label for="name">Nombre</label>
+        <input class="form__input" type="text" required />
+        <label for="email">Email</label>
+        <input class="form__input" type="email" name="email" id="email" required />
+        <label for="tel">Telefono</label>
+        <input class="form__input" type="tel" name="tel" id="tel" required />
+        <button type="submit">¡Listo!</button>
+      </form>
+
+      <footer class="page__footer">
+        <small>
+          &copy; Todos los derechos reservados
+          <a
+            src="./link.html"
+            class="link__github"
+            url="https://github.com/Natalia-GP"
+            >Nat GP</a
+          >
+        </small>
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
